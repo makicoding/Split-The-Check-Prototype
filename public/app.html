@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <title>The Barbershop</title>
+
+</head>
+<body>
+
+    <!-- BACKGROUND IMAGE -->
+    <img class="indexPageBackgroundImage" src="assets/images/sRGB_PhotoshopQuality8/sRGB_3000px_41940521_l_Crop1_Vertical.jpg" alt="Background Image"></img>
+
+
+
+    <!-------------------------------------------------------------------------------->
+    <!-- LOGO BUTTON -->
+    <a class="logoButton" href="index.html">
+      <img class="logo" src="assets/images/sRGB_PNG/Logo.png" alt="Logo"></img>
+    </a>
+    <br></br>
+
+    
+
+    <!-------------------------------------------------------------------------------->
+    <!-- PAGE HEADING -->
+    <div class="pageHeading">Make Reservation</div>
+
+
+
+    <!-------------------------------------------------------------------------------->
+    <!-- MAIN CONTENT OF PAGE -->
+    <!-- BOOTSTRAP GRID -->
+
+    <!-- Max width 960px container -->
+    <div class="container mainContentContainer">        <!-- Put any bootstrap elements into class="container" to set max width to 960px and have it centered on page -->
+      
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <form id="reservationForm">
+            
+            <div class="form-group">
+              <label for="title">Customer Name:</label>
+              <input type="text" class="form-control" id="title" autocomplete="off">  <!-- autocomplete="off" is used to turn off the autocomplete of input field -->
+            </div>
+
+            <div class="form-group">
+              <label for="mobile">Mobile Number:</label>
+              <input type="text" class="form-control" id="mobile" autocomplete="off"> <!-- autocomplete="off" is used to turn off the autocomplete of input field -->
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" id="email" autocomplete="off">  <!-- autocomplete="off" is used to turn off the autocomplete of input field -->
+            </div>
+              
+            <div class="form-group">
+              <label for="category">Select Barber:</label>
+              <select class="custom-select" id="category">
+                <option selected value=""></option>
+                <option value="Tony">Tony</option>
+                <option value="Bob">Bob</option>
+                <option value="Jim">Jim</option>
+              </select>
+            </div>
+
+            <!-- Datepicker -->
+            <div class='form-group'>
+              <label for="body"></label>
+              <label for="category">Select Date:</label>
+              <br>
+              <input type="text" class="form-control" id="datepicker" autocomplete="off"> <!-- autocomplete="off" is used to turn off the autocomplete of input field -->
+            </div>
+
+            <div class="form-group">
+              <label for="category">Select Time:</label>
+              <select class="custom-select" id="time">
+                <option selected value=""></option>
+                <option value="10am">10am</option>
+                <option value="11am">11am</option>
+                <option value="12pm">12pm</option>
+                <option value="1pm">1pm</option>
+                <option value="2pm">2pm</option>
+                <option value="3pm">3pm</option>
+                <option value="4pm">4pm</option>
+                <option value="5pm">5pm</option>
+                <option value="6pm">6pm</option>
+                <option value="7pm">7pm</option>
+              </select>
+            </div>
+
+            <br>
+
+            <button type="submit" class="submit">Submit</button>
+
+          </form>
+        </div>
+      </div>
+
+      <br></br>
+      
+    </div>
+
+    <!-------------------------------------------------------------------------------->
+    <!-- MODALS -->
+
+    <!-- Modal 1 (Please fill all required fields) -->
+    <div id="pleaseFillAllFieldsModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h2 class="modal-title modal1Title"><strong>Attention!</strong></h2>
+              </div>
+              <div class="modal-body text-center">
+                  <p>Please enter all required fields</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="closeButton modalFooterButton" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+
+      </div>
+    </div>
+
+    <!-------------------->
+    <!-- Modal 2 (Confirm) -->
+    <div id="confirmModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h2 class="modal-title"><strong>Confirm</strong></h2>
+              </div>
+              <div class="modal-body text-center">
+                <p>Are you sure you would like to submit your reservation with 
+                  <br>
+                  <span id="modalConfirmReservationBarber"></span> on 
+                  <span id="modalConfirmReservationDate"></span> at 
+                  <span id="modalConfirmReservationTime"></span>?
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="modalFooterButton" data-dismiss="modal">Close</button>
+                <button type="button" class="confirmButton modalFooterButton">Confirm</button>
+              </div>
+          </div>
+
+      </div>
+    </div>
+
+    <!-------------------->
+    <!-- Modal 3 (Success!) -->
+    <div id="successModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+  
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title"><strong>Success!</strong></h2>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Your reservation with <span id="modalSuccessReservationBarber"></span> has been submitted successfully!</p>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="successModalCloseButton modalFooterButton">Close</button>
+                </div>
+            </div>
+  
+        </div>
+      </div>
+
+
+
+    <!-------------------------------------------------------------------------------->
+    <!-- MENU -->
+
+
+
+
+
+    <!-------------------------------------------------------------------------------->
+    <!-- SCRIPTS -->
+
+    <!-- jQuery -->
+    <!-- This must come before the Bootstrap Popper and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Popper and Bootstrap JS -->
+    <!-- Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- JavaScript Links -->
+    <script src="assets/javascript/app.js" type="text/javascript"></script>
+
+
+
+
+</body>
+</html>

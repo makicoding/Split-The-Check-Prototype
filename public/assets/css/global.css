@@ -1,0 +1,90 @@
+.backgroundImage {
+    width: 100%;
+    height: auto;
+
+    position: fixed;
+    top: -20px;
+
+    z-index: -1;
+}
+
+/* -------------------- */
+
+.instructionsContainer {
+    width: 300px;
+    height: 500px;
+
+    background-color: red;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150px, -250px);
+}
+
+.instructions {
+    width: 260px;
+
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.startPrototypeButton {
+    width: 260px;
+    height: 40px;
+
+    margin: 0px 0px 15px 0px;
+    border: none;
+    border-radius: 5px;
+  
+    background-color: #FFC948;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+  
+    cursor: pointer;
+
+    position: relative;
+    top: 400px;
+    left: 20px;
+}
+  
+.startPrototypeButton:hover {
+    background-color: black;
+    color: white;
+}
+
+.startPrototypeButton:focus {
+    outline: 0;         /* This gets rid of the blue outline around the button when the button is clicked */
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* MEDIA QUERIES */
+/* When Screen Size Max-Width is 1030px */
+/* (1024px is viewport width of iPad Pro in vertical) */
+/* (1366px is viewport height of iPad Pro in vertical) */
+@media screen and (max-width: 1030px) {
+
+}
+
+/* -------------------- */
+
+/* When Screen Size Max-Width is 980px */
+/* (768px is viewport width of iPad in vertical) */
+/* (1024px is viewport height of iPad in vertical) */
+@media screen and (max-width: 980px) {
+
+}
+
+/* -------------------- */
+
+/* When Screen Size Max-Width is 750px */
+/* (375px is viewport width of iPhone X in vertical) */
+@media screen and (max-width: 750px) {
+
+}
