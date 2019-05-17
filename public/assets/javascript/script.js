@@ -5,6 +5,7 @@ $(document).ready(function () {
   document.getElementsByClassName("backgroundImageWithOpacity")[0].style.display = "none";   
   document.getElementsByClassName("backgroundImage")[0].style.display = "none";     
   document.getElementsByClassName("splashTitleBanner")[0].style.display = "none";
+  document.getElementsByClassName("instructionsContainer")[0].style.display = "none";
 
   // When the user clicks startPrototypeButton
   document.getElementsByClassName("startPrototypeButton")[0].addEventListener("click", () => {
