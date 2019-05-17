@@ -2,7 +2,15 @@
     width: 100%;
     height: 70px;
 
-    background-color: blue;
+    padding: 12px 0px 0px 0px;
+
+    color: #1FBBE2;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
 
     position: absolute;
     top: 50%;
