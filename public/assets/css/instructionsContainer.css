@@ -2,7 +2,7 @@
     width: 300px;
     height: 540px;
 
-    background-color: white;
+    background-color: none;
 
     position: absolute;
     top: 50%;
@@ -15,11 +15,11 @@
 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
-    font-size: 16.5px;
+    font-size: 16px;
 
     position: absolute;
     left: 20px;
-    top: 20px;
+    top: 0px;
 }
 
 .startPrototypeButton {
@@ -41,7 +41,7 @@
     cursor: pointer;
 
     position: relative;
-    top: 480px;
+    top: 500px;
     left: 20px;
 }
   
