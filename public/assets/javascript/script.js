@@ -12,13 +12,13 @@ $(document).ready(function () {
   });
 
   const splash = () => {
-    console.log("This is splash!");
+    console.log("This is the splash function");
     document.getElementsByClassName("instructionsContainer")[0].style.display = "none";
     document.getElementsByClassName("backgroundImage")[0].style.display = "block";
     document.getElementsByClassName("splashTitleBanner")[0].style.display = "block";
 
     // After 2 seconds, splashFadeOut is called
-    setTimeout(splashFadeOut, 1000);
+    setTimeout(splashFadeOut, 2000);
   }
   
   const splashFadeOut = () => {
@@ -31,7 +31,7 @@ $(document).ready(function () {
   const app01 = () => {
     // document.getElementsByClassName("backgroundImage")[0].style.display = "none";     
     document.getElementsByClassName("backgroundImageWithOpacity")[0].style.display = "block";
-    console.log("This is app01!") 
+    console.log("This is the app01 function") 
   }
 
 

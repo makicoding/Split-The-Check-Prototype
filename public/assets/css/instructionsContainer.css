@@ -1,17 +1,21 @@
 .instructionsContainer {
     width: 300px;
-    height: 500px;
+    height: 540px;
 
-    background-color: red;
+    background-color: white;
 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-150px, -250px);
+    transform: translate(-150px, -270px);
 }
 
 .instructions {
     width: 260px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 16.5px;
 
     position: absolute;
     left: 20px;
@@ -23,12 +27,12 @@
     height: 40px;
 
     margin: 0px 0px 15px 0px;
-    border: none;
+    border: 1px solid #6C6C6C;
     border-radius: 5px;
   
-    background-color: #FFC948;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
+    background-color: #39C9EE;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 20px;
     text-align: center;
@@ -37,7 +41,7 @@
     cursor: pointer;
 
     position: relative;
-    top: 400px;
+    top: 480px;
     left: 20px;
 }
   

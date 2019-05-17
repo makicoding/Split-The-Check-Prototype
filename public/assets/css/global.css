@@ -1,21 +1,21 @@
 .backgroundImage {
-    width: 100%;
+    width: 105%;
     height: auto;
 
     position: fixed;
-    top: -20px;
+    top: 0px;
 
     z-index: -1;
 }
 
 .backgroundImageWithOpacity {
-    width: 100%;
+    width: 105%;
     height: auto;
 
     opacity: 0.04;
 
     position: fixed;
-    top: -20px;
+    top: 0px;
 
     z-index: -1;
 }
