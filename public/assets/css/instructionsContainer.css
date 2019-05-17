@@ -1,34 +1,54 @@
-.navigationWhiteBackPlate {
+.instructionsContainer {
     width: 300px;
-    height: 520px;
+    height: 500px;
 
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: lightgrey;
-
-    background-color: white;
-
-    opacity: 0.9;
+    background-color: red;
 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-150px, -260px);
+    transform: translate(-150px, -250px);
 }
 
-
-
-.indexPageLogo {
+.instructions {
     width: 260px;
-    text-align: center;
 
     position: absolute;
-    top: 20px;
     left: 20px;
+    top: 20px;
 }
 
+.startPrototypeButton {
+    width: 260px;
+    height: 40px;
 
+    margin: 0px 0px 15px 0px;
+    border: none;
+    border-radius: 5px;
+  
+    background-color: #FFC948;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+  
+    cursor: pointer;
+
+    position: relative;
+    top: 400px;
+    left: 20px;
+}
+  
+.startPrototypeButton:hover {
+    background-color: black;
+    color: white;
+}
+
+.startPrototypeButton:focus {
+    outline: 0;         /* This gets rid of the blue outline around the button when the button is clicked */
+}
 
 /* ---------------------------------------- */
 /* ---------------------------------------- */

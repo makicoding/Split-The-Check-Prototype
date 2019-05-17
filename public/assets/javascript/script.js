@@ -1,9 +1,43 @@
 $(document).ready(function () {
   console.log("App.js connected!");
 
-  const start = () => {
-    console.log("This is the start function!");
-  };
+  // Initially hide backgroundImageWithOpacity and backgroundImage 
+  document.getElementsByClassName("backgroundImageWithOpacity")[0].style.display = "none";   
+  document.getElementsByClassName("backgroundImage")[0].style.display = "none";     
+  document.getElementsByClassName("splashTitleBanner")[0].style.display = "none";
+
+  // When the user clicks startPrototypeButton
+  document.getElementsByClassName("startPrototypeButton")[0].addEventListener("click", () => {
+    splash();
+  });
+
+  const splash = () => {
+    console.log("This is splash!");
+    document.getElementsByClassName("instructionsContainer")[0].style.display = "none";
+    document.getElementsByClassName("backgroundImage")[0].style.display = "block";
+    document.getElementsByClassName("splashTitleBanner")[0].style.display = "block";
+
+    // After 2 seconds, splashFadeOut is called
+    setTimeout(splashFadeOut, 1000);
+  }
+  
+  const splashFadeOut = () => {
+    // This part is written in jQuery because .fadeOut() is a lot shorter to write than use vanilla JS
+    $(".backgroundImage").fadeOut();
+    $(".splashTitleBanner").fadeOut();
+    app01();
+  }
+
+  const app01 = () => {
+    // document.getElementsByClassName("backgroundImage")[0].style.display = "none";     
+    document.getElementsByClassName("backgroundImageWithOpacity")[0].style.display = "block";
+    console.log("This is app01!") 
+  }
+
+
+
+
+
 
   // // Gets an optional query string from our url (i.e. ?post_id=23)
   // var url = window.location.search;

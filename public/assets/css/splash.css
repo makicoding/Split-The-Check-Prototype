@@ -1,23 +1,12 @@
-.backgroundImage {
+.splashTitleBanner {
     width: 100%;
-    height: auto;
+    height: 70px;
 
-    position: fixed;
-    top: -20px;
+    background-color: blue;
 
-    z-index: -1;
-}
-
-.backgroundImageWithOpacity {
-    width: 100%;
-    height: auto;
-
-    opacity: 0.04;
-
-    position: fixed;
-    top: -20px;
-
-    z-index: -1;
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -35px);
 }
 
 /* ---------------------------------------- */
