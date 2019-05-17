@@ -17,9 +17,9 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
-  // makeReservation route loads makerReservation.html
-  app.get("/app", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/app.html"));
-  });
+  // app route loads app.html
+  // app.get("/app", function(req, res) {
+  //   res.sendFile(path.join(__dirname, "../public/app.html"));
+  // });
 
 };

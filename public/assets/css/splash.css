@@ -15,6 +15,9 @@
     position: absolute;
     top: 50%;
     transform: translate(0px, -35px);
+
+    z-index: 1;     /* This should have a z-index of 1 so that .splashTitleBanner sits on top of .backgroundImageWithOpacity
+                        and .mainContentContainer when .splashTitleBanner fades out at the end of the spash screen */
 }
 
 /* ---------------------------------------- */

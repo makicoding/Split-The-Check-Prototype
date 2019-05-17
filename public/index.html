@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/instructionsContainer.css">
     <link rel="stylesheet" href="assets/css/splash.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/modals.css">
 
     <title>Split The Check</title>
     
@@ -135,17 +136,22 @@
     <!-------------------------------------------------------------------------------->
     <!-- MODALS -->
 
-    <!-- Modal 1 (Please fill all required fields) -->
-    <div id="pleaseFillAllFieldsModal" class="modal fade" role="dialog">
+    <!-- Modal 1 (Request Payment) -->
+    <div id="requestPaymentModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
         <!-- Modal content-->
         <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title modal1Title"><strong>Attention!</strong></h2>
-            </div>
+            <!-- <div class="modal-header">
+                <h2 class="modal-title modal1Title"><strong>Select Payment Method</strong></h2>
+            </div> -->
             <div class="modal-body text-center">
-                <p>Please enter all required fields</p>
+                <h2 class="modal-title modal1Title"><strong>Select
+                                                            <br> 
+                                                            Payment Method</strong>
+                </h2>
+                <br>
+                <p class="paymentModalContent">Enter payment modal content here</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="closeButton modalFooterButton" data-dismiss="modal">Close</button>

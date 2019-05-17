@@ -5,7 +5,8 @@
     position: fixed;
     top: 0px;
 
-    z-index: -1;
+    z-index: 1;     /* This should have a z-index of 1 so that .backgroundImage sits on top of .backgroundImageWithOpacity
+                        and .mainContentContainer when .backgroundImage fades out at the end of the spash screen */
 }
 
 .backgroundImageWithOpacity {
