@@ -1,6 +1,6 @@
 # Split-The-Check
 
-[Click here to view UX proposal](https://github.com/makicoding/Split-The-Check/blob/master/Presentation%20Deck/Split%20The%20Check%20App%20Presentation%20v3.pdf)
+[Click here to view UX Design proposal](https://github.com/makicoding/Split-The-Check/blob/master/Presentation%20Deck/Split%20The%20Check%20App%20Presentation%20v3.pdf)
 <br></br>
 [Click here to view deployed prototype](https://aqueous-bayou-95081.herokuapp.com/)
 ***
