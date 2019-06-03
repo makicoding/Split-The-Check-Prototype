@@ -6,7 +6,7 @@
 ***
 
 Technologies used in deployed prototype: HTML, CSS, JavaScript, jQuery, Bootstrap, Node JS, Express, Heroku. 
-
+<br></br>
 Prototype is responsive and designed for a mobile screen. 
 
 ***
