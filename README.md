@@ -14,7 +14,7 @@ Prototype is responsive and designed for a mobile screen.
 A mobile app that improves the experience of splitting a check at a restaurant between a group of people. 
 <br></br>
 
-![Screenshot](https://raw.githubusercontent.com/makicoding/Split-The-Check/master/screenshot/sRGB_1000px_SplitTheCheck_Thumbnail.jpg)
+<kbd>![Screenshot](https://raw.githubusercontent.com/makicoding/Split-The-Check/master/screenshot/sRGB_1000px_SplitTheCheck_Thumbnail.jpg)</kbd>
 
 
 
